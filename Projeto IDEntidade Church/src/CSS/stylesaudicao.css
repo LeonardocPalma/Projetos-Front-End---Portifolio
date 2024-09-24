@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url(../img/Louvor.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade */
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+/* .data-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 40px;
+    border-radius: 5px;
+    z-index: 2;
+} */
+
+.data-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 0, 0, 1.5); /* Aumentado a opacidade para 0.8 */
+    padding: 20px 40px; /* Aumentado o padding para melhor destaque */
+    border-radius: 10px; /* Maior arredondamento para destaque */
+    font-size: 2rem; /* Aumentado o tamanho da fonte */
+    font-weight: bold;
+    border: 2px solid #ffffff; /* Adicionada borda branca para destaque */
+    color: #ffffff; /* Certificando-se de que o texto seja branco */
+}
+
+/* .data-container p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+} */
+
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro para destacar o texto */
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.texto-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    /* Alterado: Utiliza cálculo para ajustar largura das divs conforme tamanho da tela */
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.texto-container h2 {
+    color: #ff0000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.texto-container h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-container p, .texto-container ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+    padding-left: 50px;
+}
+
+.texto-container ul {
+    list-style-type: disc;
+}
+
+.checkbox-container {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5); /* Aumenta o tamanho da checkbox */
+}
+
+
+.hidden {
+    display: none;
+}
+
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button-container a {
+    display: inline-block;
+    background-color: #ff0000;
+    background-image: linear-gradient(145deg, #ff3333, #cc0000); /* Gradiente para destacar o botão */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px; /* Bordas arredondadas maiores */
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animação suave */
+}
+
+.button-container a:hover {
+    background-image: linear-gradient(145deg, #cc0000, #ff3333); /* Inversão do gradiente ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de "flutuar" ao passar o mouse */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Sombra mais profunda ao passar o mouse */
+}
+
+/* Estilos Responsivos */
+
+/* Tablets e Dispositivos Móveis Pequenos */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem; /* Ajustado: Reduz o tamanho da fonte em tablets */
+    }
+
+    .data-container {
+        font-size: 0.9rem; /* Ajustado: Reduz o tamanho da fonte da data em tablets */
+        bottom: 5px;
+        right: 10px;
+    }
+
+    .texto-container {
+        padding: 15px; /* Ajustado: Reduz padding em tablets */
+        /* Alterado: Ajusta largura das divs para duas colunas em tablets */
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .grid-container {
+        flex-direction: column; /* Ajustado: Muda o layout para coluna única */
+        gap: 15px; /* Ajustado: Reduz gap entre as divs */
+    }
+}
+
+/* Smartphones e Dispositivos Móveis */
+@media (max-width: 768px) {
+    header {
+        height: 300px; /* Ajustado: Reduz a altura do cabeçalho em smartphones */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Ajustado: Reduz o tamanho da fonte no cabeçalho */
+    }
+
+    .data-container {
+        font-size: 0.8rem; /* Ajustado: Reduz o tamanho da fonte da data em smartphones */
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .button-container a {
+        padding: 10px 20px; /* Ajustado: Reduz o padding do botão em smartphones */
+        font-size: 1rem; /* Ajustado: Reduz o tamanho da fonte do botão */
+    }
+
+    .checkbox-container input {
+        transform: scale(1); /* Ajustado: Reduz o tamanho do checkbox em smartphones */
+    }
+
+    .texto-container {
+        /* Alterado: Ajusta a largura das divs para coluna única em smartphones */
+        flex: 1 1 100%;
+    }
+}
+
+/* Smartphones Pequenos */
+@media (max-width: 480px) {
+    header {
+        height: 250px; /* Ajustado: Reduz ainda mais a altura do cabeçalho */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Ajustado: Reduz o tamanho da fonte no cabeçalho */
+    }
+
+    .data-container {
+        font-size: 0.7rem; /* Ajustado: Reduz o tamanho da fonte da data em smartphones pequenos */
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .button-container a {
+        padding: 8px 15px; /* Ajustado: Reduz o padding do botão em smartphones pequenos */
+        font-size: 0.9rem; /* Ajustado: Reduz o tamanho da fonte do botão */
+    }
+}

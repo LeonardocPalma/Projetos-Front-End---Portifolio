@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Palma Park</title>
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                <!-- <a href="#">
+                    <img src="./src/img/logo.png" alt="Palma Park" class="logo">
+                </a> -->
+                <p class="logo-paragrafo">Resort Palma Park</p>
+                <ul class="navbar-items">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Reservas</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#" class="default-btn">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <main>
+            <div class="main-banner">
+                <h1>Resort Palma Park</h1>
+                <p>O melhor lugar para descansar e relaxar em umas férias com a família! </p>
+            </div>
+            <section class="services-container">
+                <ul>
+                    <li>
+                        <i class="fas fa-bowl-food"></i>
+                        <h3>Restaurantes Tipicos</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis pariatur voluptas labore,
+                            dolor temporibus, perferendis neque quod doloremque fugit repudiandae unde enim esse autem
+                            facilis illo? Vitae doloribus commodi ex?
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-gamepad"></i>
+                        <h3>PlayGround</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis pariatur voluptas labore,
+                            dolor temporibus, perferendis neque quod doloremque fugit repudiandae unde enim esse autem
+                            facilis illo? Vitae doloribus commodi ex?
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-martini-glass"></i>
+                        <h3>Bar Molhado</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis pariatur voluptas labore,
+                            dolor temporibus, perferendis neque quod doloremque fugit repudiandae unde enim esse autem
+                            facilis illo? Vitae doloribus commodi ex?
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="pricing-container">
+                <h2>Reservas e Preços</h2>
+                <p>Selecione uma opção de reserva que atenda as suas necessidades</p>
+                <div class="plans-container">
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$250/diaria</li>
+                            <li class="plan-name">Suíte Basic</li>
+                            <li>Frigobar</li>
+                            <li>Cofre</li>
+                            <li>Ar condicionado</li>
+                            <li>Cama de Casal</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$400/diaria</li>
+                            <li class="plan-name">Suíte Premium</li>
+                            <li>Tudo do plano Basic</li>
+                            <li>Cozinha</li>
+                            <li>Banheira</li>
+                            <li>TV com Netflix</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price recommended">R$550/diaria</li>
+                            <li class="plan-name">Suíte Deluxe</li>
+                            <li>Tudo do plano Premium</li>
+                            <li>Sala com tv</li>
+                            <li>Área da piscina</li>
+                            <li>quarto/garçom incluso</li>
+                            <li class="plan-btn recommended">Saber mais</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$1100/diaria</li>
+                            <li class="plan-name">Suíte Master</li>
+                            <li>Tudo do plano Deluxe</li>
+                            <li>Cama com Massagem</li>
+                            <li>frente para o mar</li>
+                            <li>Jacuzi na varanda</li>
+                            <li class="plan-btn">Saber mais</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="searchdomain-container">
+                <h2>Qual a data da reserva?</h2>
+                <p>Verifique se a data que você precisa está disponivel</p>
+                <form>
+                    <input type="date" name="data" id="data" placeholder="Escolha a sua data">
+                    <input type="submit" value="Verificar Data">
+                </form>
+            </section>
+            <section class="contact-container">
+                <h2>Mande uma Mensagem</h2>
+                <p>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</p>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    <textarea name="message" id="message" placeholder="Descreva o que você precisa!"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+        </main>
+        <footer>
+            <p>Resort Palma Park @ 2023</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

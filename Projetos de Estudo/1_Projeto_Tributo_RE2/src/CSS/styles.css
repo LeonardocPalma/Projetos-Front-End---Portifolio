@@ -1,0 +1,128 @@
+html {
+    font-family: Helvetica;
+    background-color: #000;
+    color: #E2E6E4;
+}
+
+.container {
+    max-width: 1600px;
+    background-color: #A44651;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.bold, .feature .legenda, .img-bold .legenda2{
+    font-weight: bold;
+    color: #000;
+}
+
+.italico {
+    font-style: italic;
+    color: #000;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+}
+
+.header .main-title {
+    color: #000;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.header .main-paragrafo {
+    font-style: italic;
+}
+
+/* Imagem Destaque */
+.feature{
+    text-align: center;
+    margin-top: 30px;  
+}
+
+.feature .img1 {
+    max-width: 1400px;
+    max-height: 800px;
+    border-radius: 10px;
+    /* width: auto;
+    height: auto; */
+}
+
+.feature .legenda {
+    text-decoration: underline;
+    font-size: 20;    
+    margin-top: 10px;
+}
+
+/* Biografia */
+.biograph-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.biograph-container p {
+    text-align: justify;
+}
+
+/* quotes */
+.quotes-container {
+    background-color: #202020;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.quotes-container blockquote {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p {
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.curiosities-container li {
+    height: 30px;
+    font-size: 18px;
+}
+
+/* imgaem bold */
+.img-bold {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px dashed #ddd;
+}
+
+.img-bold .legenda2 {
+    text-decoration: underline;
+    font-size: 20;    
+    margin-top: 10px;
+}
+
+.img-bold .img2 {
+    max-width: 1400px;
+    max-height: 800px;
+    border-radius: 10px;
+    /* width: auto;
+    height: auto; */
+}
+
+.moreinfo-container {
+    border-bottom: 1px dashed #ddd; 
+}
+
